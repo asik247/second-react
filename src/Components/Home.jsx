@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Home = () => {
     const students = ['Rahim', 'Karim', 'Sakib']
     const numbers = [10, 20, 30, 40, 50]

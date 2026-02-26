@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Children = ({address,roadNo,location}) => {
+const Children = (props) => {
+    const {address,roadNo,location} = props;
     return (
         <div style={{
             border:'2px solid yellow',
