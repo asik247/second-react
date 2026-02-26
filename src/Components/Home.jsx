@@ -28,7 +28,7 @@ const Home = ({fetchData}) => {
             ))}
 
             {numbers.map((name) => (
-                <h1>{name}</h1>
+                <h1> key = {name}{name}</h1>
             ))}
 
 

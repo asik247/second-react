@@ -3,9 +3,16 @@ import Children from './Components/Children';
 import Child from './Components/Child';
 import Home from './Components/Home';
 import Acctor from './Components/Acctor';
+import Singer from './Components/Singer';
 
 const App = () => {
   const allNayokNames = ['Rajjak','Bappa Raj','Omar Sunny','Salman Shah','Jasim','Anwar'];
+  // Object declare code start here;
+  const singers = [
+    {id:1,name:'Tahasan',age:45},
+    {id:2,name:'Pollobi',age:35},
+    {id:3,name:'Pagly',age:19},
+  ]
   const fetchData = async () =>{
     const res = await fetch("https://jsonplaceholder.typicode.com/users");
     const data = await res.json();
@@ -18,7 +25,10 @@ const App = () => {
     <div> 
       <br /><br /><br />
       {
-        allNayokNames.map(actor=> <Acctor actor={actor}></Acctor>)
+        allNayokNames.map(actor=><Acctor key={actor} actor={actor}></Acctor>)
+      }
+      {
+        singers.map(singer=><Singer key={singer.id} singer={singer}></Singer>)
       }
        
         <Person name='khan' dept='cst'></Person>
