@@ -22,7 +22,7 @@ const Home = ({fetchData}) => {
     return (
         <div>
             <h1>I am Home</h1>
-            <h1>I am about</h1>
+            <h1>I am about </h1>
             {students.map((student, index) => (
                 <h2 key={index}>{student}</h2>
             ))}

@@ -2,6 +2,7 @@ import React from 'react';
 import Children from './Components/Children';
 import Child from './Components/Child';
 import Home from './Components/Home';
+import Acctor from './Components/Acctor';
 
 const App = () => {
   const fetchData = async () =>{
@@ -12,12 +13,15 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div> 
+      <br /><br /><br />
+        <Acctor></Acctor>
         <Person name='khan' dept='cst'></Person>
         <Developer name="Asik" language="Python"></Developer>
         <Children address='Dhaka'roadNo='10'location='savar'></Children>
         <Child name="Ar" age= {20} hobbie = 'codding'></Child>
         <Home fetchData={fetchData}></Home>
+
     </div>
   ); 
 };
