@@ -6,7 +6,7 @@ import Home from './Components/Home.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
-    <Home></Home>
+    <App />
+    {/* <Home></Home> */}
   </StrictMode>,
 )

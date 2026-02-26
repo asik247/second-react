@@ -1,14 +1,23 @@
 import React from 'react';
 import Children from './Components/Children';
 import Child from './Components/Child';
+import Home from './Components/Home';
 
 const App = () => {
+  const fetchData = async () =>{
+    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await res.json();
+    return data;
+    // console.log(data);
+  }
+
   return (
     <div>
         <Person name='khan' dept='cst'></Person>
         <Developer name="Asik" language="Python"></Developer>
         <Children address='Dhaka'roadNo='10'location='savar'></Children>
         <Child name="Ar" age= {20} hobbie = 'codding'></Child>
+        <Home fetchData={fetchData}></Home>
     </div>
   ); 
 };
