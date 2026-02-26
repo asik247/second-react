@@ -1,13 +1,14 @@
 import React, {  useEffect } from 'react';
 const Home = ({fetchData}) => {
     // const useUse = use(fetchData);
-    useEffect(()=>{
-        const getData = async ()=>{
-            const data = await fetchData();
-            console.log(data);
-        }
-        getData()
-    },[fetchData])
+    console.log(fetchData);
+    // useEffect(()=>{
+    //     const getData = async ()=>{
+    //         const data = await fetchData();
+    //         console.log(data);
+    //     }
+    //     getData()
+    // },[fetchData])
     
     const students = ['Rahim', 'Karim', 'Sakib']
     const numbers = [10, 20, 30, 40, 50]
