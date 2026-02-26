@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import Acctor from './Components/Acctor';
 
 const App = () => {
+  const allNayokNames = ['Rajjak','Bappa Raj','Omar Sunny','Salman Shah','Jasim','Anwar'];
   const fetchData = async () =>{
     const res = await fetch("https://jsonplaceholder.typicode.com/users");
     const data = await res.json();
@@ -13,9 +14,13 @@ const App = () => {
   }
 
   return (
+    
     <div> 
       <br /><br /><br />
-        <Acctor></Acctor>
+      {
+        allNayokNames.map(actor=> <Acctor actor={actor}></Acctor>)
+      }
+       
         <Person name='khan' dept='cst'></Person>
         <Developer name="Asik" language="Python"></Developer>
         <Children address='Dhaka'roadNo='10'location='savar'></Children>
