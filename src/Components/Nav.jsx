@@ -5,6 +5,7 @@ const Nav = ()=>{
     const greating =()=>{
         return "Welcome to React"
     }
+    const isToggle = false;
     return(
         <>
         {/* variable use */}
@@ -13,7 +14,8 @@ const Nav = ()=>{
         <h2>{number + 5}</h2>
         {/* Function use */}
         <h3>{greating()}</h3>
-
+        {/* Condition Rendering code start here */}
+        {isToggle ? "Welcome back":"Plaese Login"}
         </>
     )
 }
