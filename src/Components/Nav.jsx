@@ -6,6 +6,7 @@ const Nav = ()=>{
         return "Welcome to React"
     }
     const isToggle = false;
+    const isStudent = true;
     return(
         <>
         {/* variable use */}
@@ -15,7 +16,8 @@ const Nav = ()=>{
         {/* Function use */}
         <h3>{greating()}</h3>
         {/* Condition Rendering code start here */}
-        {isToggle ? "Welcome back":"Plaese Login"}
+        {isToggle ? "Welcome back":"Plaese Login"} <br />
+        {isStudent ? "Studnet":"Not a Student"}
         </>
     )
 }
