@@ -5,7 +5,7 @@ const Child = ({name,age,hobbie}) => {
         <div>
             <h1>Assalum Alaikum {name}</h1>
             <h1>My age is {age}</h1>
-            <h1>Programming {hobbie}</h1>
+            <h1>My Hobbie {hobbie}</h1>
         </div>
     );
 };

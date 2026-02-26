@@ -1,35 +1,41 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-// import Nav from './Components/Nav'
+import React from 'react';
 
-import Child from './Components/Child'
-import Children from './Components/Children'
-
-
-
-function App() {
+const App = () => {
   return (
-    <>
-    {/* <Nav></Nav> */}
-      {/* props code her */}
-      {/* <Parent></Parent> */}
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div> */}
-      {/* <h1>React</h1> */}
-      {/* props code start here */}
-{/*      
-    <Child>name = "Rahim" age = {25} hobbie = "codding"</Child>
-     */}
-     {/* <Child name="Rahim" age={25} hobbie="Coding" /> */}
-     <Children address = "Dhaka" roadNo ={10} location = "Moiler Mor"/>
-    </>
+    <div>
+      <h1>Hi</h1>
+        <Person></Person>
+        <Developer></Developer>
+
+    </div>
+  );
+};
+
+export default App;
+
+function Person (){
+  const someStyle = {
+    color: "red",
+    border:'2px solid red',
+    textAlign:"center"
+  }
+  return(
+    <div style={someStyle}>
+      <p>Name:</p>
+      <p>Dept:</p>
+    </div>
   )
 }
-export default App
+
+function Developer (){
+  return(
+    <div style={{
+      border:'2px solid green',
+      margin:'10px',
+      textAlign:'center'
+    }}>
+      <h3>Developer:</h3>
+      <p>Technology:</p>
+    </div>
+  )
+}
